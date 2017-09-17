@@ -16,6 +16,26 @@ function a () {
         });
     });
 }
+function getTeams(callback) {
+    MongoClient.connect('mongodb://192.168.0.7:27017/test', function(err, db) {
+        if (err) {
+            throw err;
+        }
+        db.collection('teams2017').find().toArray(function(err, result) {
+            if (err) {
+                throw err;
+            }
+            callback(teams);
+            console.log(result);
+        });
+    });
+}
+router.get('/teams2017', function(req, res){
+    getTeams((temas) =>{
+        res.json(teams);
+    });
+});
+
 
 
 /* GET home page. */
