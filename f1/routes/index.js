@@ -31,6 +31,20 @@ function getTeams(callback) {
         });
     });
 }
+function getCircuits(callback) {
+    MongoClient.connect('mongodb://192.168.0.7:27017/test', function(err, db) {
+        if (err) {
+            throw err;
+        }
+        db.collection('circuits2017').find().toArray(function(err, result) {
+            if (err) {
+                throw err;
+            }
+            callback(teams);
+            console.log(result);
+        });
+    });
+}
 
 function getDrivers (callback) {
 
@@ -61,7 +75,11 @@ router.get('/drivers2017', function(req, res){
         res.json(drivers);
     });
 });
-
+router.get('/circuits2017', function(req, res){
+    getDrivers((drivers) =>{
+        res.json(drivers);
+    });
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
