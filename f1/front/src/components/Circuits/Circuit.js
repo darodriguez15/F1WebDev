@@ -12,10 +12,17 @@ import PropTypes from "prop-types";
             <div>
             <div className="circuitName text-center"><h2>{this.props.circuit.circuitName}</h2></div>
             <div className="row">
-            <img className="imagenCircuito col-md-6" src={this.props.circuit.image} width="300"/>
+            <div className=" col-md-6"><img className="imagenCircuito" src={this.props.circuit.image} width="300"/></div>
             <div className="circuitPlace col-md-6 text-left">
+             <dt>Country:</dt>
              <p>{this.props.circuit.country} </p>
+             <dt>City:</dt>
              <p>{this.props.circuit.locality}</p>
+             <dt>Race Distance:</dt>
+             <p>{this.props.circuit.distaciaCarrera}</p>  
+             <dt>Lap Distance:</dt>  
+             <p>{this.props.circuit.distaciaCircuito}</p>
+              <dt>Total Laps:</dt>  
              <p>{this.props.circuit.numberLaps}    <img class="date-picker" src="https://d30y9cdsu7xlg0.cloudfront.net/png/27291-200.png" height="50" width="50"/></p>
              </div>  
             </div>   
