@@ -25,7 +25,7 @@ class Home extends  Component{
                 <br/><br/>
                 <div className="row">
                     <div className="col-sm-12">
-                        <iframe width="1000" height="500" src="https://www.youtube.com/embed/2EQYimzsaW0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="90%" height="500px" src="https://www.youtube.com/embed/2EQYimzsaW0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
