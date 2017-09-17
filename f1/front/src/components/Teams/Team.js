@@ -20,8 +20,7 @@ import PropTypes from "prop-types";
             </div>
             <div className="col-sm-4">
             <div>
-            <div className="urlTeam"><a href={this.props.team.url}>Go to Web Page</a></div> 
-            <div className="row border"> 
+             <div className="row border">
              <div className="col-md-6"><h4>Nationality:</h4></div>
             <div className="nacionalidadTeam col-md-6">{this.props.team.nationality}</div>   
             </div> 
@@ -33,16 +32,29 @@ import PropTypes from "prop-types";
             </div>
             </div> 
             <div className="row"> 
-            <div className="text-center title col-md-6"><h4>Titles:</h4></div>
-            <div className="col-md-6">
-            <div className="numTitulosTeam"><img class="date-picker" src="http://www.free-icons-download.net/images/gold-cup-icon-71803.png" height="20" width="20"/>  {this.props.team.numero_titulos}</div>
-            <div className="numPodiosTeam"><img class="date-picker" src="https://cdn1.iconfinder.com/data/icons/sports-glyphs-3/128/106-512.png" height="20" width="20"/>  {this.props.team.numero_podios}</div>
+            <div className="text-center title col-md-6"><h4>Titles:</h4>
+
+
             </div>
+                <div className="col-md-6">
+                    <div className="numTitulosTeam"><br/><img class="date-picker" src="http://www.free-icons-download.net/images/gold-cup-icon-71803.png" height="20" width="20"/>  {this.props.team.numero_titulos}</div>
+                   </div>
+
+                <div className="text-center title col-md-6"><h4>Podiums:</h4>
+
+
+                </div>
+                <div className="col-md-6">
+                        <div className="numPodiosTeam"><br/><img class="date-picker" src="https://cdn1.iconfinder.com/data/icons/sports-glyphs-3/128/106-512.png" height="20" width="20"/>  {this.props.team.numero_podios}</div>
+                </div>
+
             </div>
             </div>
             </div> 
-            </div> 
-            </div>  
+            </div>
+                <br/>
+            </div>
+
         );
     }
 }

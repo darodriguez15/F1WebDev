@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var drivers = require('./routes/drivers');
 var stats = require('./routes/stats');
+var teams = require('./routes/teams');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use('/', index);
 
 app.use('/driversinfo', drivers);
 app.use('/statsinfo', stats);
+app.use('/teamsinfo', teams);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -2,6 +2,10 @@
     color: white;
     text-align: center  ;
 }
+h1
+{
+    font-family: fantasy;
+}
 .Stats
 {
     text-align: center;
@@ -16,6 +20,11 @@
     border-top-width: 1px;
     border-right-width: 1px;
 }
+.nombreTeam
+{
+    font-family: fantasy;
+}
+
 table {
     border: 1px solid black;
     margin: 0 auto;
