@@ -107,8 +107,29 @@ statsTable
 {
     text-align: center;
 }
+.uniandes
+{
+    width: 50%;
+    height: 30%;
+}
 .f1logo{
-    align:center;
+
+    width: 100%;
+    height: 100%;
+}
+.imageHomePage
+{
+    width: 80%;
+    height: 10%;
+}
+.jumbohome {
+    display: flex;
+    align-items: center;
+    background-image: url('http://bucket3.glanacion.com/anexos/fotos/55/formula-1-2360755w620.jpg');
+    background-size: cover;
+    color: #ffffff;
+    height: 500px;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 .jumbotron
 {
