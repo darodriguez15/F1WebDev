@@ -3,6 +3,7 @@ var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 
 
+var url = 'mongodb://192.168.0.7:27017/test';
 function a () {
     MongoClient.connect('mongodb://192.168.0.7:27017/test', function(err, db) {
         if (err) {
@@ -30,12 +31,36 @@ function getTeams(callback) {
         });
     });
 }
+
+function getDrivers (callback) {
+
+// Connection URL
+
+// Use connect method to connect to the server
+    MongoClient.connect(url, function(err, db) {
+        assert.equal(null, err);
+        console.log("Connected succesfully to server");
+        var drivers = db.collection("drivers2017");
+
+        drivers.find({}).toArray((err2, drivers)=>{
+            if (err2) throw  err2;
+            callback(drivers);
+        })
+    });
+}
+
+
 router.get('/teams2017', function(req, res){
-    getTeams((temas) =>{
+    getTeams((teams) =>{
         res.json(teams);
     });
 });
 
+router.get('/drivers2017', function(req, res){
+    getDrivers((drivers) =>{
+        res.json(drivers);
+    });
+});
 
 
 /* GET home page. */

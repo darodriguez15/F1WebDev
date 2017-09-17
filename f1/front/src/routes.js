@@ -17,7 +17,7 @@ import home from "./components/Home"
 const AppRoutes = () =>
     <App>
         <Switch>
-            <Route path="/drivers" component={Drivers}/>
+            <Route path="/drivers" component={Drivers}/>np
             <Route path="/Teams" component={Teams}/>
             <Route path="/Circuits" component={Circuits}/>
             <Route path="/Stats" component={Stats}/>

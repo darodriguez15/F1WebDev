@@ -129,19 +129,19 @@ class Teams extends  Component{
             }]
             };
          }
-        //   ComponentDidMount(){
-        //       fetch("/teams2017", {method: "GET", headers:{accept:"application/json"}})
-        //      .then((res)=> {
-        //          console.log("rest en index");
-        //           if(res.ok)
-        //              return res.json();
-        //          })
-        //           .then((teams) =>{
-        //               this.setState({
-        //                   teams : teams
-        //              })
-        //         })
-        //   }
+          ComponentDidMount(){
+               fetch("/teams2017", {method: "GET", headers:{accept:"application/json"}})
+              .then((res)=> {
+                  console.log("rest en index");
+                   if(res.ok)
+                      return res.json();
+                  })
+                   .then((teams) =>{
+                       this.setState({
+                           teams : teams
+                      })
+                 })
+           }
     render(){
         return(
             <div className="Teams">
