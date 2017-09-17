@@ -9,6 +9,8 @@ var index = require('./routes/index');
 var drivers = require('./routes/drivers');
 var stats = require('./routes/stats');
 var teams = require('./routes/teams');
+var circuits = require('./routes/circuits');
+var fan = require('./routes/fanZone');
 
 var app = express();
 
@@ -30,6 +32,9 @@ app.use('/', index);
 app.use('/driversinfo', drivers);
 app.use('/statsinfo', stats);
 app.use('/teamsinfo', teams);
+app.use('/circuitInfo', circuits);
+
+app.use('/fans', fan);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
