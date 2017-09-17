@@ -10,26 +10,39 @@ import PropTypes from "prop-types";
     render(){
         return(
             <div>
-            
-            <div className="row">
+            <div className="nombreTeam text-center"><h2>{this.props.team.name}</h2></div>
+            <div className="row"> 
+            <div className="col-sm-4">
+            <img className="imagenETeam" src={this.props.team.imagen_escuderia}  width="300"/>
+            </div>
+            <div className="col-sm-4">
+            <img className="imagenCarroTeam" src={this.props.team.imagen_carro} width="300"/>
+            </div>
+            <div className="col-sm-4">
+            <div>
+            <div className="urlTeam"><a href={this.props.team.url}>Go to Web Page</a></div> 
+            <div className="row border"> 
+             <div className="col-md-6"><h4>Nationality:</h4></div>
+            <div className="nacionalidadTeam col-md-6">{this.props.team.nationality}</div>   
+            </div> 
+           <div className="row"> 
+            <div className="text-center col-md-6"><h4>Pilots:</h4></div>
             <div className="col-md-6">
-            <img className="imagenETeam" src={this.props.team.imagen_escuderia}/>
+            <div className="piloto1Team"><img class="date-picker" src="https://s-media-cache-ak0.pinimg.com/originals/95/b5/73/95b573457ae683307e6fa4eeb5f021db.png" height="20" width="20"/>  {this.props.team.piloto1}</div>
+            <div className="piloto2Team"><img class="date-picker" src="https://s-media-cache-ak0.pinimg.com/originals/95/b5/73/95b573457ae683307e6fa4eeb5f021db.png" height="20" width="20"/>  {this.props.team.piloto2}</div>
             </div>
+            </div> 
+            <div className="row"> 
+            <div className="text-center title col-md-6"><h4>Titles:</h4></div>
             <div className="col-md-6">
-            <img className="imagenCarroTeam" src={this.props.team.imagen_carro}/>
+            <div className="numTitulosTeam"><img class="date-picker" src="http://www.free-icons-download.net/images/gold-cup-icon-71803.png" height="20" width="20"/>  {this.props.team.numero_titulos}</div>
+            <div className="numPodiosTeam"><img class="date-picker" src="https://cdn1.iconfinder.com/data/icons/sports-glyphs-3/128/106-512.png" height="20" width="20"/>  {this.props.team.numero_podios}</div>
             </div>
             </div>
-            <div className="row">
-            <div className="idTeam">{this.props.team.constructorId}</div>
-            <div className="urlTeam">{this.props.team.url}</div>
-            <div className="nombreTeam">{this.props.team.name}</div>
-            <div className="nacionalidadTeam">{this.props.team.nationality}</div>
-            <div className="piloto1Team">{this.props.team.piloto1}</div>
-            <div className="piloto2Team">{this.props.team.piloto2}</div>
-            <div className="numTitulosTeam">{this.props.team.numero_titulos}</div>
-            <div className="numPodiosTeam">{this.props.team.numero_podios}</div>
-            </div>   
             </div>
+            </div> 
+            </div> 
+            </div>  
         );
     }
 }
