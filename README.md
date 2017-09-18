@@ -4,7 +4,7 @@ En este proyecto podremos visualizar la informacion de los Pilotos, equipos y ci
 EL proyecto utuliza NodeJs+Express ademas de usar ReactJS y mongoDb como base de datos.
 
 
-Acá una version esyable del proyecto. Se recomienda abrir con google Chrome o con internet explorer
+Acá una version estable del proyecto. Se recomienda abrir con google Chrome o con internet explorer
 
 http://192.168.0.7:3000/
 
