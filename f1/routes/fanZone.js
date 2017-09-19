@@ -4,7 +4,7 @@ var mongo = require("mongodb");
 var MongoClient = require('mongodb').MongoClient
     , assert = require('assert');
 
-var url = 'mongodb://192.168.0.7:27017/test';
+var url = 'mongodb://f1webdev:f10000@ds139844.mlab.com:39844/f1react';
 
 function getDrivers (callback) {
 

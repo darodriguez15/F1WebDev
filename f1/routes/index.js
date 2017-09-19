@@ -3,7 +3,7 @@ var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 
 
-var url = 'mongodb://192.168.0.7:27017/test';
+var url = 'mongodb://f1webdev:f10000@ds139844.mlab.com:39844/f1react';
 function a () {
     MongoClient.connect('mongodb://192.168.0.7:27017/test', function(err, db) {
         if (err) {
