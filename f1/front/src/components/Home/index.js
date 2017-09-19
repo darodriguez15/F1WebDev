@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-
+//Uso de carpetas para separar componentes
 class Home extends  Component{
     render(){
         return(
