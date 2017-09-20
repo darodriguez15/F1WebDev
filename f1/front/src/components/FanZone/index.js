@@ -34,12 +34,12 @@ class FanZone extends  Component{
         return this.state.fanZone.map((t)=> {
             return(<div className="col-sm-6 caja">
                 <br/>
-                  <iframe width="420" height="345" src={t.video}></iframe>
+                <iframe width="420" height="345" src={t.video}></iframe>
 
 
                 <p className="descripcion">Name: {t.name}</p>
                 <p className="descripcion">From : {t.from}</p>
-                 <br/>
+                <br/>
 
 
 
@@ -59,28 +59,11 @@ class FanZone extends  Component{
                     {this.renderFZ()}
                 </div>
                 <br/><br/><br/><br/>
-                <h1>You can do some cool stuff in your car ? Show us !!</h1>
+                <h1 href="www.google.com">You can do some cool stuff in your car ? Show us !!</h1>
                 <br/>
                 <br/>
 
-                <form>
-                    <label>
-                        Name: <br/>
-                        <input type="text" name="name" />
-                    </label>
-                    <br/>
-                    <label>
-                        From: <br/>
-                        <input type="text" name="from" />
-                    </label>
-                    <br/>
-                    <label>
-                        Url of your video: <br/>
-                        <input type="text" name="url" />
-                    </label>
-                    <br/>
-                    <input type="submit" value="Submit" />
-                </form>
+                <a href="/videos">Show us</a>
             </div>
         )
     }

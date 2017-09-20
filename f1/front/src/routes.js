@@ -12,6 +12,7 @@ import Stats from "./components/Stats";
 import FanZone from "./components/FanZone";
 import P404 from "./components/Page404";
 import home from "./components/Home"
+import video from "./components/Video";
 
 
 const AppRoutes = () =>
@@ -22,6 +23,7 @@ const AppRoutes = () =>
             <Route path="/Circuits" component={Circuits}/>
             <Route path="/Stats" component={Stats}/>
             <Route path="/FanZone" component={FanZone}/>
+            <Route path="/videos" component={video}/>
             <Route path="/" component={home}/>
             <Route component={P404}/>
 
